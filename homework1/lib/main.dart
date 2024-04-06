@@ -18,7 +18,7 @@ class _SentimentAnalysisAppState extends State<SentimentAnalysisApp> {
   Color _backgroundColor = Colors.white;
 
   Future<String> queryAPI(String text) async {
-    const apiUrl = "https://api-inference.huggingface.co/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english";
+    const apiUrl = "https://api-inference.huggingface.co/models/wonrax/phobert-base-vietnamese-sentiment";
     final headers = {
       "Authorization": "Bearer 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",
       "Content-Type": "application/json",
@@ -56,11 +56,11 @@ class _SentimentAnalysisAppState extends State<SentimentAnalysisApp> {
     IconData sentimentIcon;
     Color backgroundColor;
     switch (sentiment) {
-      case 'POSITIVE':
+      case 'POS':
         sentimentIcon = Icons.sentiment_satisfied_alt;
         backgroundColor = Colors.green;
         break;
-      case 'NEGATIVE':
+      case 'NEG':
         sentimentIcon = Icons.sentiment_dissatisfied;
         backgroundColor = Colors.red;
         break;
