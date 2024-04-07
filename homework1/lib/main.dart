@@ -64,6 +64,10 @@ class _SentimentAnalysisAppState extends State<SentimentAnalysisApp> {
         sentimentIcon = Icons.sentiment_dissatisfied;
         backgroundColor = Colors.red;
         break;
+      case 'NEU':
+        sentimentIcon = Icons.sentiment_neutral;
+        backgroundColor = Colors.grey;
+        break;
       default:
         sentimentIcon = Icons.sentiment_neutral;
         backgroundColor = Colors.grey;
