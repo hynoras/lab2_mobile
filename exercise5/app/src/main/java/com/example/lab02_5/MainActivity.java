@@ -14,7 +14,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_PHONE_CALL = 1;
-    Button showMap, callMom, openDial, openContacts, sendMsg, viewPhotos, startMusic, directMap;
+    Button showMap, dialMe, openDial, openContacts, sendMsg, viewPhotos, startMusic, directMap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        callMom = (Button) findViewById(R.id.callMom);
-        callMom.setOnClickListener(new View.OnClickListener() {
+        dialMe = (Button) findViewById(R.id.dialMe);
+        dialMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:(+84)382906901"));
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:(+84)898326632"));
                 if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_PHONE_CALL);
                 } else {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         openDial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:(+84)382906901"));
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:(+84)898326632"));
                 startActivity(intent);
             }
         });
@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
         sendMsg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:0382906901"));
-                intent.putExtra("sms_body", "Hello Tui La KuDat Day");
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:0898326632"));
+                intent.putExtra("sms_body", "Hi, I am Vinh Quang!");
                 startActivity(intent);
             }
         });
