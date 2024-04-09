@@ -10,12 +10,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Quang\.android\avd\Pixel_2_API_VanillaIceCream.avd" />
+                  <value value="C:\Users\Quang\.android\avd\Pixel_2_API_VanillaIceCream_2.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-04-08T14:05:34.711132800Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-03-26T13:46:20.596123300Z" />
         </State>
       </entry>
     </value>

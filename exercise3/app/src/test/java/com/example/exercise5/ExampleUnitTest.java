@@ -1,4 +1,4 @@
-package com.example.btandroid_3_week2;
+package com.example.exercise5;
 
 import org.junit.Test;
 
